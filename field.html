@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#3f4639">
+  <meta name="description" content="傅一博，LSE 会计硕士在读、2027 届。曾在 OPPO、字节跳动懂车帝与凯度实习，关注 AI 产品、策略产品与用户研究。">
+  <title>傅一博 · AI 产品与策略产品</title>
+  <link rel="icon" href="data:,">
+  <link rel="preload" href="./assets/photos/31.webp" as="image">
+  <link rel="stylesheet" href="./field.css">
+  <link rel="stylesheet" href="./intro.css">
+  <script src="./field-core.js" defer></script>
+  <script src="./court.js" defer></script>
+  <script type="module" src="./field-world.js"></script>
+  <script type="module" src="./field-pet-studio.js"></script>
+</head>
+<body class="is-loading intro-edition">
+  <a class="skip-link" href="#work">跳转到实习经历</a>
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader-word"><span>Y</span><span>I</span><span>B</span><span>O</span></div>
+    <div class="loader-meta"><span>LIVING FIELD / 傅一博</span><b id="loaderValue">00</b></div>
+    <div class="loader-line"><i id="loaderBar"></i></div>
+  </div>
+
+  <canvas id="worldCanvas" tabindex="0" aria-label="傅一博的三维生长档案。移动指针观察场景，使用顶部导航进入不同章节。"></canvas>
+  <div class="world-grade" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#home" aria-label="返回首页"><i>Y</i><b>YIBO</b></a>
+    <nav aria-label="主要章节">
+      <a href="#home" class="active">关于我</a>
+      <a href="#work">实习经历</a>
+      <a href="#profile">教育与能力</a>
+      <a href="#atlas">生活切片</a>
+    </nav>
+    <div class="scene-index" id="sceneIndex" aria-live="polite">
+      <span>00</span><i aria-hidden="true"><b></b></i><em>LIVING FIELD</em>
+    </div>
+    <div class="header-tools">
+      <a class="header-contact" href="#contact">联系我</a>
+      <button type="button" id="soundToggle" aria-pressed="false" title="声音"><span>◖◗</span><b>OFF</b></button>
+      <button class="menu-button" type="button" id="menuButton" aria-label="打开目录" aria-expanded="false"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero intro-hero" id="home" data-scene="hero" aria-labelledby="heroTitle">
+      <div class="hero-pin">
+        <div class="intro-hero-grid">
+          <div class="intro-hero-copy">
+            <span class="section-label">FU YIBO / 个人档案</span>
+            <p class="intro-greeting">你好，我是</p>
+            <h1 id="heroTitle">傅一博<span>YIBO FU</span></h1>
+            <h2 class="intro-role">关注 AI 产品，<br>也关注真实的问题。</h2>
+            <p class="intro-summary">LSE 会计硕士在读，2027 届。<br>曾在 OPPO、字节跳动懂车帝与凯度实习，<br class="desktop-break">参与 AI Agent 迭代、业务风控策略与用户研究。</p>
+            <div class="intro-actions"><a class="button-primary" href="#work">浏览实习经历</a><a class="button-text" href="#contact">和我聊聊</a></div>
+          </div>
+          <figure class="intro-portrait">
+            <div class="portrait-image"><img src="./assets/photos/31.webp" alt="傅一博在西班牙旅行时的照片" fetchpriority="high" width="900" height="1200"></div>
+            <figcaption><span>工作之外，保持好奇。</span><small>ON THE ROAD / SPAIN</small></figcaption>
+            <div class="portrait-note"><span>最近一站 · 2026 夏</span><strong>OPPO</strong><p>AI 产品经理实习生</p></div>
+          </figure>
+        </div>
+        <div class="intro-hero-footer"><span>把不同领域的经验，带进产品判断。</span><div><b>AI 产品</b><i></i><b>策略设计</b><i></i><b>用户研究</b></div><a href="#work" aria-label="向下查看实习经历">向下探索 <span>↓</span></a></div>
+      </div>
+    </section>
+
+    <section class="experience" id="work" data-scene="experience" aria-labelledby="workTitle">
+      <div class="section-rule"><span>01 / EXPERIENCE</span><span>2023 — 2026</span></div>
+      <div class="section-heading"><h2 id="workTitle">过往实习经历<span>在真实业务中，学习做产品。</span></h2><p>从用户研究与商业分析，<br>走向策略产品和 AI 产品。</p></div>
+      <div class="experience-list">
+        <article class="experience-entry" aria-labelledby="oppoTitle">
+          <div class="experience-meta"><span class="experience-number">01</span><time>2026.07 — 2026.09</time><span>AI 产品 / 开发者生态</span></div>
+          <div class="experience-content"><div class="experience-title"><h3 id="oppoTitle">OPPO</h3><span>AI 产品经理实习生</span></div><h4>让 AI 问数更可靠，<br class="mobile-break">让开发者服务更完整。</h4><p>参与游戏开放平台的 AI 问数迭代，围绕意图识别、数据查询和分析生成，完善 Agent 工作流与反馈闭环。</p><ul class="experience-points"><li>梳理问数指标、异常提示与用户反馈，让回答有边界、问题可追踪。</li><li>结合 MCP 与 Skill 串联数据提取、分析和周报生成，并参与个人开发者生态规划。</li></ul><div class="experience-tags"><span>Agent Workflow</span><span>MCP / Skill</span><span>开发者生态</span></div></div>
+          <aside class="experience-outcome oppo-outcome"><span>工作重点</span><strong>从提问<br>到反馈</strong><div class="outcome-flow"><span>意图识别</span><i></i><span>数据查询</span><i></i><span>分析生成</span></div><p>连接 AI 能力与具体业务流程</p></aside>
+        </article>
+        <article class="experience-entry" aria-labelledby="dcdTitle">
+          <div class="experience-meta"><span class="experience-number">02</span><time>2026.04 — 2026.07</time><span>策略产品 / 业务风控</span></div>
+          <div class="experience-content"><div class="experience-title"><h3 id="dcdTitle">字节跳动 · 懂车帝</h3><span>策略产品经理实习生</span></div><h4>用数据与策略，<br class="mobile-break">识别被遗漏的真实成交。</h4><p>围绕 CPS 成交漏报与营销活动风控，完成 SQL 分析、分层策略、PRD 和效果复盘，推动识别机制进入实际业务流程。</p><ul class="experience-points"><li>主导手机号识别策略上线，独立设计并落地“30 天冷静期 + 自动确认成交”机制。</li><li>参与营销活动反作弊，在识别效果与用户误伤之间持续校准策略。</li></ul><div class="experience-tags"><span>SQL 分析</span><span>策略设计</span><span>PRD / 效果复盘</span></div></div>
+          <aside class="experience-outcome"><span>手机号识别专项</span><div class="outcome-metric"><strong>37.5<small>%</small></strong><p>成交补录率</p></div><div class="outcome-secondary"><b>95%</b><span>本店购车率</span></div><p class="metric-scope">以上均为编辑距离 = 1 场景</p></aside>
+        </article>
+        <article class="experience-entry" aria-labelledby="kantarTitle">
+          <div class="experience-meta"><span class="experience-number">03</span><time>2025.06 — 2025.09</time><span>用户研究 / 产品策略</span></div>
+          <div class="experience-content"><div class="experience-title"><h3 id="kantarTitle">凯度 Kantar</h3><span>用户研究与产品策略实习生</span></div><h4>把用户的选择，<br class="mobile-break">转化为产品判断的依据。</h4><p>参与滴滴出行等用户研究项目，梳理认知、选择与使用路径，识别价格、安全和服务体验三类核心痛点。</p><ul class="experience-points"><li>参与用户深访与研究资料整理，完成需求分层、痛点归因与竞品触点分析。</li><li>输出体验优化和分层运营建议，设计 A/B 测试验证思路并参与复盘。</li></ul><div class="experience-tags"><span>用户深访</span><span>需求分层</span><span>体验研究</span></div></div>
+          <aside class="experience-outcome"><span>研究积累</span><div class="outcome-metric"><strong>300<small>+</small></strong><p>用户深访与研究资料整理</p></div><p class="metric-scope">从一手材料到结构化洞察</p></aside>
+        </article>
+      </div>
+      <div class="earlier-experience"><div><span class="section-label">EARLIER CHAPTERS</span><h3>更早的积累</h3><p>研究、咨询与财务，<br>构成我的商业分析底色。</p></div><div class="earlier-list"><article><time>2025.03 — 06</time><div><h4>东北证券 <span>行业研究实习生</span></h4><p>跟踪建筑建材行业与 30+ 家公司，参与公司点评、深度报告及模型分析。</p></div></article><article><time>2024.06 — 09</time><div><h4>普华永道 <span>商业分析实习生</span></h4><p>参与新能源资产优化与欧洲市场进入研究，搭建分析框架并输出市场策略建议。</p></div></article><article><time>2023.06 — 09</time><div><h4>中国农业银行 <span>财务实习生</span></h4><p>参与财务数据核对、台账维护与报销流程梳理，整理标准化表格和流程材料。</p></div></article></div></div>
+    </section>
+
+    <section class="background-section" id="profile" data-scene="background" aria-labelledby="profileTitle">
+      <div class="section-rule"><span>02 / BACKGROUND & CAPABILITIES</span><span>持续学习，持续实践</span></div>
+      <div class="section-heading"><h2 id="profileTitle">不止一种看问题的方法。<span>商业分析的底色，产品实践的视角。</span></h2></div>
+      <div class="background-grid"><div class="education-panel"><span class="section-label">EDUCATION / 教育背景</span><article><span class="school-monogram">LSE</span><div><h3>伦敦政治经济学院</h3><p>会计 · 理学硕士</p><time>2025.09 — 2027.03 · 在读</time></div></article><article><span class="school-monogram school-uob">UoB</span><div><h3>伯明翰大学</h3><p>会计与金融 · 理学学士</p><time>2022.09 — 2025.07</time></div></article><p class="education-note">伯明翰大学专业第一 · 校级一等奖学金<br>托福 104 · ACCA 已通过 7 门</p></div>
+      <div class="capability-panel"><span class="section-label">HOW I WORK / 能力与工具</span><article><b>01</b><div><h3>先理解问题</h3><p>用户研究、需求分析、竞品分析与业务拆解</p><span>用户深访 / XMind</span></div></article><article><b>02</b><div><h3>再把方案做清楚</h3><p>PRD、流程设计、原型设计与数据验证</p><span>Figma / Axure / SQL / Excel</span></div></article><article><b>03</b><div><h3>让 AI 进入工作流</h3><p>Prompt、Agent 流程、知识库与工具连接</p><span>Codex / Cursor / MCP / Skill</span></div></article></div></div>
+    </section>
+
+    <section class="personal-project" id="cases" data-scene="practice" aria-labelledby="casesTitle">
+      <div class="project-copy"><span class="section-label">03 / PERSONAL PRACTICE</span><p class="project-category">个人项目 · 2026.01 — 2026.03</p><h2 id="casesTitle">AI 需求共创台</h2><p>把零散素材，整理成可追溯的需求包。<br>围绕信息抽取、澄清追问与结构化输出，完成产品设计、Moonshot API 接入和异常交互验证。</p></div>
+      <div class="project-workflow" aria-label="项目流程：碎片化素材经过信息抽取与澄清追问，生成需求包"><div class="workflow-inputs"><span>访谈记录</span><span>业务目标</span><span>零散想法</span></div><i class="workflow-line"></i><div class="workflow-process"><span>AGENT WORKFLOW</span><strong>信息抽取 · 澄清追问</strong><small>保留证据，补齐关键上下文</small></div><i class="workflow-line"></i><div class="workflow-output"><span>OUTPUT</span><strong>结构化需求包</strong><small>可追溯 · 可导出</small></div></div>
+    </section>
+
+    <section class="atlas" id="atlas" data-scene="atlas" aria-labelledby="atlasTitle">
+      <header class="atlas-head">
+        <div><span>04 / LIFE BEYOND WORK</span><h2 id="atlasTitle">工作之外，<br><em>去看看更大的世界。</em></h2></div>
+        <p>在欧洲、亚太与北美留下的 22 个站点。<br>旅行让我换一个角度，观察人与生活。</p>
+      </header>
+      <div class="atlas-scroll" id="atlasScroll">
+        <div class="atlas-pin">
+          <div class="atlas-coordinate"><b id="atlasNumber">01</b><span id="atlasCoordinate">78.22° N / 15.65° E</span></div>
+          <div class="atlas-rail" id="atlasRail" aria-live="polite"></div>
+          <div class="atlas-caption">
+            <div><span id="atlasRegion">EUROPE / HIGH ARCTIC</span><h3 id="atlasName">朗伊尔城</h3></div>
+            <p id="atlasLine">从世界最北面的城市开始。</p>
+          </div>
+          <div class="atlas-control">
+            <div class="atlas-count"><span id="atlasCurrent">01</span><b>/ 22</b></div><button type="button" id="atlasPrev" aria-label="上一个旅行地点">←</button><button type="button" id="atlasNext" aria-label="下一个旅行地点">→</button>
+            <input id="atlasScrubber" type="range" min="0" max="21" value="0" step="1" aria-label="选择旅行地点">
+          </div>
+        </div>
+      </div>
+      <div class="atlas-license">
+        <span>IMAGE ARCHIVE</span>
+        <p>地点摄影来自 Wikimedia Commons；作者与许可证标注在每张图片下方。</p>
+        <a href="./assets/travel/ATTRIBUTION.md" target="_blank" rel="noopener">查看完整来源 ↗</a>
+      </div>
+    </section>
+
+    <section class="field-notes" id="notes" data-scene="atlas" aria-labelledby="notesTitle">
+      <header class="notes-head">
+        <span>04 / FIELD NOTES</span>
+        <h2 id="notesTitle">亲历现场。<br><em>把旅途装进相册里。</em></h2>
+        <p>斯瓦尔巴的雪夜、特罗姆瑟的峡湾、爱琴海的沉船湾——<br>这些是只有我自己能带回来的画面。</p>
+      </header>
+      <div class="notes-strip" id="notesStrip" role="list">
+        <figure role="listitem" style="--tilt:-2deg"><img src="./assets/photos/39.webp" alt="朗伊尔城深蓝雪夜中几位同行者打着头灯徒步" loading="lazy" decoding="async"><figcaption><b>FN 01</b><span>朗伊尔城 · 深蓝雪夜徒步</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:1.5deg"><img src="./assets/photos/40.webp" alt="极圈山脊的缝隙中望见远方小镇灯光" loading="lazy" decoding="async"><figcaption><b>FN 02</b><span>山脊缝里 · 远望小镇</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:-1deg"><img src="./assets/photos/41.webp" alt="几位登山者在雪原上休整，装备散落身边" loading="lazy" decoding="async"><figcaption><b>FN 03</b><span>雪原休整 · 冰爪与同行者</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:2.5deg"><img src="./assets/photos/42.webp" alt="斯瓦尔巴全球种子库入口夜景，发出翠绿色光" loading="lazy" decoding="async"><figcaption><b>FN 04</b><span>斯瓦尔巴 · 全球种子库</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:-2.5deg"><img src="./assets/photos/43.webp" alt="希腊扎金索斯沉船湾，湛蓝海水与白色悬崖" loading="lazy" decoding="async"><figcaption><b>FN 05</b><span>扎金索斯 · 沉船湾</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:2deg"><img src="./assets/photos/44.webp" alt="特罗姆瑟峡湾中两只虎鲸从水面升起，远处有观鲸船" loading="lazy" decoding="async"><figcaption><b>FN 06</b><span>特罗姆瑟 · 海湾里的虎鲸</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:-1.5deg"><img src="./assets/photos/45.webp" alt="缆车车厢里戴着彩色雪镜的自拍，雪镜反射出同行者" loading="lazy" decoding="async"><figcaption><b>FN 07</b><span>缆车车厢 · 雪镜中的夜</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:3deg"><img src="./assets/photos/46.webp" alt="挪威夜空中铺开的绿色极光，雪地上有旅人剪影" loading="lazy" decoding="async"><figcaption><b>FN 08</b><span>挪威 · 第一次见到的极光</span></figcaption></figure>
+        <figure role="listitem" style="--tilt:-2deg"><img src="./assets/photos/47.webp" alt="特罗姆瑟缆车俯瞰的夜之城，海湾与雪覆盖的屋顶" loading="lazy" decoding="async"><figcaption><b>FN 09</b><span>特罗姆瑟 · 俯瞰夜之城</span></figcaption></figure>
+      </div>
+      <div class="notes-foot">
+        <span>SHOT ON · iPhone / DJI OSMO POCKET 3</span>
+        <small>横向滑动查看更多</small>
+      </div>
+    </section>
+
+    <section class="play" id="play" data-scene="court">
+      <div class="play-heading">
+        <span>YIBO BADMINTON CLUB / 中羽二级</span>
+        <h2>下一拍，<br><em>交给你。</em></h2>
+        <button type="button" id="focusGame">ENTER COURT <span>↓</span></button>
+      </div>
+      <div class="arcade" id="arcade">
+        <div class="arcade-top"><span><i></i> COURT 01 / LIVE</span><div><label for="difficulty">难度</label><select id="difficulty"><option value="casual">友谊赛</option><option value="challenge">挑战赛</option></select><button type="button" id="gameFullscreen" aria-label="全屏球场">⛶</button></div></div>
+        <div class="game-scores"><span>YOU <b id="playerScore">0</b></span><div><small>先得 7 分获胜</small><strong id="gameStatus" role="status">上场前，先选你的击球方式</strong></div><span><b id="opponentScore">0</b> YIBO BOT</span></div>
+        <div class="game-stage">
+          <canvas id="courtCanvas" width="1200" height="660" tabindex="0" aria-label="羽毛球对战。方向键移动，空格平抽，J 挑高，K 扣杀，P 暂停；也支持鼠标和触控。"></canvas>
+          <div class="game-cover" id="gameCover"><span>MEET ME ON THE COURT</span><h3>你的主场，<br>现在开局。</h3><p>移动到落点附近，再选择击球方式。</p><button type="button" id="startMatch">开始 7 分对战 <span>↗</span></button></div>
+          <div class="game-popup" id="gamePopup" aria-hidden="true"></div>
+        </div>
+        <div class="game-controls">
+          <div class="move-pad" aria-label="移动控制"><button type="button" data-move="up" aria-label="向上移动">↑</button><button type="button" data-move="left" aria-label="向左移动">←</button><button type="button" data-move="down" aria-label="向下移动">↓</button><button type="button" data-move="right" aria-label="向右移动">→</button></div>
+          <div class="shot-controls"><button type="button" data-shot="lob">挑高 <kbd>J</kbd></button><button type="button" data-shot="drive">平抽 <kbd>SPACE</kbd></button><button type="button" data-shot="smash">扣杀 <kbd>K</kbd></button></div>
+          <button type="button" id="pauseMatch" aria-label="暂停比赛" disabled>Ⅱ</button>
+          <button type="button" id="restartMatch" aria-label="重新开始比赛" disabled>↺</button>
+        </div>
+        <div class="game-help"><p>桌面：鼠标 / WASD / 方向键 · 点击球场或空格击球<br>手机：按住方向键移动 + 击球按钮</p><span id="gameStats">本局最长回合 0 · 本机最佳 0</span></div>
+      </div>
+    </section>
+
+    <section class="pet" id="pet" data-scene="dog" aria-labelledby="petTitle">
+      <figure class="pet-photo"><img src="./assets/photos/36.webp" alt="穿着深色小衣服的白色比熊看向镜头"><figcaption>CHIEF HAPPINESS OFFICER / PORTRAIT 36</figcaption></figure>
+      <div class="pet-copy">
+        <span>LIFE NOTE / THE REAL MAIN CHARACTER</span>
+        <h2 id="petTitle">所有严肃叙事，<br><em>都应该留一点毛茸茸。</em></h2>
+        <p>它负责提醒我：高效之外，还有散步、零食和毫无理由的快乐。</p>
+        <div><button type="button" id="petDog">摸摸头 <span>♡</span></button><button type="button" id="feedDog">给一颗零食</button></div>
+        <p id="petReply" role="status">它正在观察你。</p>
+        <div class="pet-meter"><span>快乐值</span><i><b id="petMeter"></b></i><strong id="petValue">0%</strong></div>
+        <figure class="pet-studio" aria-label="Blender 导出的 3D 小狗模型，可拖动旋转。">
+          <canvas id="petCanvas" tabindex="0" aria-label="Blender 建模的 3D 小狗，鼠标拖动可旋转观察"></canvas>
+          <figcaption><span>LIVING STUDIO · BLENDER → GLB</span><small>Model: &ldquo;Puppy&rdquo; · Poly by Google · CC BY 3.0</small></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="closing" id="contact" data-scene="closing" aria-labelledby="contactTitle">
+      <span>05 / LET’S CONNECT</span>
+      <h2 id="contactTitle">欢迎聊聊产品、AI，<br><em>或者下一站去哪。</em></h2>
+      <p>期待新的工作机会，也期待有趣的交流。<br>手机 / 微信：<a href="tel:18852356108">18852356108</a></p>
+      <button type="button" id="copyContact">复制手机 / 微信号</button>
+      <details><summary>AI CODING / MAKING OF <span>＋</span></summary><div><p>页面以 Three.js 构建自然空间，参考 ThreeUI Sylva 的自然场景与 Halvorsen 的编辑排版。内容来自个人简历，个人项目与实习经历分别呈现。</p><p>真实旅行地点图像来自 Wikimedia Commons，并保留作者、许可证和原始页面。实习成果的适用场景在对应经历中注明；测算收益与已实现结果分别表述。</p><p>&ldquo;生活切片&rdquo;章节中的 3D 小狗由 Blender 工作流接入：先用 Poly by Google 的 CC BY 3.0 &ldquo;Puppy&rdquo; 模型跑通 GLTFLoader，后续计划用 Blender 自建一只白色比熊，烘焙贴图后替换 glb。</p></div></details>
+      <footer><a href="#home">YIBO / LIVING FIELD</a><span>© 2026 FU YIBO</span><span>STAY CURIOUS. GO SOMEWHERE NEW.</span></footer>
+    </section>
+  </main>
+
+  <dialog class="menu-dialog" id="menuDialog" aria-label="网站目录">
+    <div><span>INDEX / 目录</span><button type="button" data-close="menuDialog" aria-label="关闭目录">×</button></div>
+    <nav>
+      <a href="#home"><b>00</b><span>关于我</span><i>HELLO, I’M YIBO</i></a>
+      <a href="#work"><b>01</b><span>实习经历</span><i>EXPERIENCE</i></a>
+      <a href="#profile"><b>02</b><span>教育与能力</span><i>BACKGROUND</i></a>
+      <a href="#cases"><b>03</b><span>个人实践</span><i>PERSONAL PROJECT</i></a>
+      <a href="#atlas"><b>04</b><span>生活切片</span><i>22 STOPS</i></a>
+      <a href="#notes"><b>＋</b><span>亲历现场</span><i>FIELD NOTES</i></a>
+      <a href="#play"><b>＋</b><span>一起打球</span><i>BADMINTON</i></a>
+      <a href="#pet"><b>＋</b><span>认识比熊</span><i>HAPPINESS OFFICER</i></a>
+      <a href="#contact"><b>05</b><span>联系我</span><i>LET’S CONNECT</i></a>
+    </nav>
+  </dialog>
+
+  <dialog class="image-dialog" id="imageDialog" aria-label="旅行照片查看器">
+    <button type="button" data-close="imageDialog" aria-label="关闭照片">×</button>
+    <figure><img id="dialogImage" alt=""><figcaption><span id="dialogPlace"></span><small id="dialogCredit"></small></figcaption></figure>
+    <div><button type="button" id="imagePrev" aria-label="上一张">←</button><span id="dialogCount">01 / 22</span><button type="button" id="imageNext" aria-label="下一张">→</button></div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>

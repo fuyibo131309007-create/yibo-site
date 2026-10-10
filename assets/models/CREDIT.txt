@@ -1,0 +1,3 @@
+puppy.glb last swapped on 2026-10-09T16:44:42
+source : /Users/bytedance/Desktop/FDE/个人网页创作/assets/models/puppy.glb
+credit : Poly by Google · CC BY 3.0 (seed model)
